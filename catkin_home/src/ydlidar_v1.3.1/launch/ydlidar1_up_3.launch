@@ -15,6 +15,8 @@
     <param name="samp_rate"    type="int"    value="4"/>
     <param name="frequency"    type="double" value="10"/>
   </node>
-  <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser4"
+      <node pkg="tf" type="static_transform_publisher" name="laser_frame_2_lidar_link" args="0 0 0 0 0 3.14 laser_frame lidar_link_2 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="lidar_to_lidar_rev" args="0 0 0 0 0 3.14 lidar_link_2 lidar_link 100"/>
+      <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser4"
     args="0.215 0.0 0.28 3.14 3.14  0.0 /base_footprint /laser_frame 40" />
 </launch>

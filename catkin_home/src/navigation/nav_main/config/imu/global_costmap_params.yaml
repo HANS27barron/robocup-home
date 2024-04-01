@@ -1,7 +1,7 @@
 global_costmap:
    global_frame: map  # The name of the global frame used for the global costmap.
    robot_base_frame: base_footprint  # The name of the robot base frame used in the costmap.
-   update_frequency: 20  # The frequency (in Hz) at which the global costmap is updated.
+   update_frequency: 10  # The frequency (in Hz) at which the global costmap is updated.
    publish_frequency: 5  # The frequency (in Hz) at which the global costmap is published.
    static_map: true  # Flag indicating whether the global costmap uses a static map as a base.
    rolling_window: false  # Flag indicating whether to use a rolling window approach for the global costmap.

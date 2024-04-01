@@ -6,7 +6,7 @@ obstacle_layer:
   min_obstacle_height: 0.0  # Minimum height of the obstacles.
   obstacle_range: 3.0  # Maximum range at which obstacles are detected.
   raytrace_range: 3.5  # Maximum range for raytracing to clear out space.
-  inflation_radius: 0.10  # Maximum distance from an obstacle at which costs are incurred for planning paths.
+  inflation_radius: 0.20  # Maximum distance from an obstacle at which costs are incurred for planning paths.
   combination_method: 1  # Method used to combine costmap layers.
   observation_sources:  laser_scan_zed laser_scan_sensor # camera_depth  #  Sources of observations for the obstacle layer.
   track_unknown_space: true  # Determines whether to track unknown space in the costmap.
@@ -81,8 +81,8 @@ obstacle_layer:
 inflation_layer:
   enabled:              true
   #cost_scaling_factor:  2.0 # exponential rate at which the obstacle cost drops off (default: 10)
-  cost_scaling_factor:  1 # exponential rate at which the obstacle cost drops off (default: 10)
-  inflation_radius:     0.01 # max. distance from an obstacle at which costs are incurred for planning paths.
+  cost_scaling_factor:  10 # exponential rate at which the obstacle cost drops off (default: 10)
+  inflation_radius:     0.3 # max. distance from an obstacle at which costs are incurred for planning paths.
 
 static_layer:
   enabled:              true

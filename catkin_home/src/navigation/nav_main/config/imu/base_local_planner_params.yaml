@@ -3,19 +3,19 @@ recovery_behavior_enabled: true  # Enables recovery behavior when the trajectory
 clearing_rotation_allowed: true  # Allows rotation for obstacle clearing. (Default: true)
 
 TrajectoryPlannerROS:  # Configuration for the TrajectoryPlannerROS module.
-   max_vel_x: 0.25  # Maximum linear velocity in the x-axis. (Default: 0.25)
+   max_vel_x: 0.15  # Maximum linear velocity in the x-axis. (Default: 0.25)
    min_vel_x: 0.05  # Minimum linear velocity in the x-axis. (Default: 0.05)
    max_vel_y: 0.0  # Maximum linear velocity in the y-axis (zero for a differential drive robot). (Default: 0.0)
    min_vel_y: 0.0  # Minimum linear velocity in the y-axis. (Default: 0.0)
-   min_in_place_vel_theta: 0.5  # Minimum velocity for in-place rotation. (Default: 0.5)
+   min_in_place_vel_theta: 0.2  # Minimum velocity for in-place rotation. (Default: 0.5)
    escape_vel: -0.1  # Velocity used for escaping from a failed trajectory. (Default: -0.1)
    acc_lim_x: 0.5  # Maximum linear acceleration in the x-axis. (Default: 0.5)
    acc_lim_y: 0.0  # Maximum linear acceleration in the y-axis (zero for a differential drive robot). (Default: 0.0)
    acc_lim_theta: 0.5  # Maximum angular acceleration. (Default: 0.5)
 
    holonomic_robot: false  # Indicates whether the robot is holonomic (able to move freely) or not. (Default: false)
-   yaw_goal_tolerance: 0.1  # Tolerance for reaching the goal orientation (in radians). (Default: 0.1)
-   xy_goal_tolerance: 0.1  # Tolerance for reaching the goal position in the x and y axes (in meters). (Default: 0.1)
+   yaw_goal_tolerance: 0.2  # Tolerance for reaching the goal orientation (in radians). (Default: 0.1)
+   xy_goal_tolerance: 0.2  # Tolerance for reaching the goal position in the x and y axes (in meters). (Default: 0.1)
    latch_xy_goal_tolerance: false  # Determines whether to maintain the xy_goal_tolerance after reaching it. (Default: false)
    pdist_scale: 0.4  # Scaling factor for the path distance cost. (Default: 0.4)
    gdist_scale: 0.8  # Scaling factor for the goal distance cost. (Default: 0.8)
