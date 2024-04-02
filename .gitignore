@@ -3,9 +3,11 @@ __ignore__/
 
 ### ROS ###
 /catkin_home/devel/
+/catkin_home/devel_back_home/
 /catkin_home/devel_isolated/
 /catkin_home/logs/
 /catkin_home/build/
+/catkin_home/build_back_home/
 /catkin_home/build_isolated/
 /catkin_home/bin/
 /catkin_home/install/
