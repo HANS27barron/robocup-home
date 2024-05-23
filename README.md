@@ -1,7 +1,4 @@
-<img src="readme_resources/roborregos_logo.png" width="400" ><img> 
-
-# RoBorregos Robocup-Home
-This repository contains the development of RoBorregos' robotic solution for [RoboCup's @HOME competition](https://athome.robocup.org/), Open Platform League (OPL), where the robot must be capable of interacting with people, manipulate objects and have intelligent responses for everyday home tasks.
+<img src="readme_resources/roborregos_logo.png" width="400" ><imgThis repository contains the development of RoBorregos' robotic solution for [RoboCup's @HOME competition](https://athome.robocup.org/), Open Platform League (OPL), where the robot must be capable of interacting with people, manipulate objects and have intelligent responses for everyday home tasks.
 
 See [RoboCup @HOME Rules](https://robocupathome.github.io/RuleBook/rulebook/master.pdf).
 
